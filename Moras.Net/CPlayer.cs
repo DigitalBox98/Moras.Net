@@ -1144,16 +1144,16 @@ namespace Moras.Net
 
             if ((pos >= 0) && (pos < 10) && (arItemSlot[pos].Type == EItemType.Crafted))
             {
-                /*		switch (arItemSlot[pos].Quality)
-                        {
-                        case 94: fFaktor = 0.2; break;
-                        case 95: fFaktor = 0.28; break;
-                        case 96: fFaktor = 0.34; break;
-                        case 97: fFaktor = 0.4; break;
-                        case 98: fFaktor = 0.46; break;
-                        case 99: fFaktor = 0.53; break;
-                        case 100: fFaktor = 0.61; break;
-                        }*/
+               switch (arItemSlot[pos].Quality)
+               {
+                    case 94: fFaktor = 0.2; break;
+                    case 95: fFaktor = 0.28; break;
+                    case 96: fFaktor = 0.34; break;
+                    case 97: fFaktor = 0.4; break;
+                    case 98: fFaktor = 0.46; break;
+                    case 99: fFaktor = 0.53; break;
+                    case 100: fFaktor = 0.61; break;
+               }
 
                 result = (int)Math.Floor(fFaktor * (arItemSlot[pos].Level + 1) + 0.5);
 
